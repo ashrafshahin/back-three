@@ -39,9 +39,10 @@ app.get('/userlist', async (req,res) => {
 })
 // prontend theke backend e pathate hobe kono unique identity for example - 'email'
 app.post('/userinfo', async (req, res) => {
-    const { amaremail } = req.body
-    let data = registrationModel.findOne({email:amaremail})
-    res.send(data)
+    const { myemail } = req.body
+    let data = await registrationModel.findOne({ email: myemail })
+        console.log(data);
+        res.send(data)
 })
 
 app.listen(5000, () => {
