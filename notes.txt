@@ -1,0 +1,12 @@
+Read this docs
+https://www.mongodb.com/docs/atlas/sample-data/?interface=atlas-ui&utm_campaign=search_sample_checklist&utm_medium=app&utm_source=intercom#in---go-to-the-clusters-page-for-your-project.
+
+mongoDB node.js Driver
+https://www.mongodb.com/docs/drivers/node/current/#introduction
+
+
+1. model jai variable e import korso, saitai new VariableName dete hobe... same thaka ta must, make sure that [2 jaigai use hobe]
+2. const 1 bar. userData = new registrationModel - ai variable ta [3 ta jaigai use hobe, call korte likte hobe]
+3.
+4. res.send(2 bar.variableName)
+5. database e save korar jonno...3 bar.VariableName.save();

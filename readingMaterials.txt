@@ -1,5 +1,0 @@
-Read this docs
-https://www.mongodb.com/docs/atlas/sample-data/?interface=atlas-ui&utm_campaign=search_sample_checklist&utm_medium=app&utm_source=intercom#in---go-to-the-clusters-page-for-your-project.
-
-mongoDB node.js Driver
-https://www.mongodb.com/docs/drivers/node/current/#introduction

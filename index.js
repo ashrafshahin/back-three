@@ -2,8 +2,8 @@ const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
 
-//database create work
-const User = require('./models/registrationModel')
+//database create work - design model imported...
+const registrationModel = require('./models/registrationModel')
 
 // middleware to convert all strings into objects/json
 app.use(express.json())
@@ -18,12 +18,12 @@ mongoose.connect('mongodb+srv://shahin_db_user:BaoxjkvRUjnlT6DW@clustershahin.ni
 app.post('/registration', async (req, res) => {
     // frontend er value aner process...req.body
     const { myname, myemail, mypassword } = req.body
-    const userData = new User({
+    const userData = new registrationModel({
         username: myname,
         email: myemail,
         password: mypassword,
     })
-
+    // database e save korar jonno...
     userData.save();
 
     res.send(userData)
