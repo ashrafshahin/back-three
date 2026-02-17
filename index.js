@@ -25,9 +25,23 @@ app.post('/registration', async (req, res) => {
     })
     // database e save korar jonno...
     userData.save();
-
+    // database kaj ends...
     res.send(userData)
 
+})
+
+// Read- get data from database...
+app.get('/userlist', async (req,res) => {
+    let data = await registrationModel.find({})
+    console.log(data);
+    res.send(data)
+    
+})
+// prontend theke backend e pathate hobe kono unique identity for example - 'email'
+app.post('/userinfo', async (req, res) => {
+    const { amaremail } = req.body
+    let data = registrationModel.findOne({email:amaremail})
+    res.send(data)
 })
 
 app.listen(5000, () => {
